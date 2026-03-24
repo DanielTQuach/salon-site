@@ -121,3 +121,54 @@ main {
   color: hsl(var(--primary));
 }
 
+/* Simple desktop nav */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: hsl(var(--muted-foreground));
+  text-decoration: none;
+}
+
+.nav a:hover,
+.nav a[aria-current="page"] {
+  color: hsl(var(--primary));
+  text-decoration: none;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: auto;
+  padding: 2rem 0;
+  background: hsl(var(--deep-plum));
+  color: hsl(var(--primary-foreground) / 0.75);
+  font-size: 0.875rem;
+}
+
+.site-footer a {
+  color: hsl(var(--primary-foreground) / 0.85);
+}
+
+.site-footer a:hover {
+  color: hsl(var(--primary-foreground));
+}
+
+/* Sections */
+.section {
+  padding: 3rem 0;
+}
+
+.section--muted {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--warm-cream)) 0%,
+    hsl(var(--champagne)) 100%
+  );
+}
