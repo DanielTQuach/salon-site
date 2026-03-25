@@ -426,6 +426,11 @@ main {
   margin-bottom: 3.5rem;
 }
 
+/* Warm gradient section */
+.bg-warm-gradient {
+  background: linear-gradient(135deg, hsl(var(--warm-cream)) 0%, hsl(var(--champagne)) 100%);
+}
+
 /* Hero */
 .hero {
   position: relative;
