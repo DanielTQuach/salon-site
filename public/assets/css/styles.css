@@ -483,3 +483,50 @@ main {
   font-style: italic;
   color: hsl(var(--muted-foreground));
 }
+
+/* CTA band */
+.cta-band {
+  background: hsl(var(--deep-plum));
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.cta-band h2 {
+  margin: 0;
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: hsl(var(--primary-foreground));
+}
+
+@media (min-width: 768px) {
+  .cta-band h2 {
+    font-size: 2.25rem;
+  }
+}
+
+.cta-band p {
+  margin: 0.75rem 0 0;
+  color: hsl(var(--primary-foreground) / 0.7);
+}
+
+.cta-band .btn-primary {
+  margin-top: 1.5rem;
+}
+
+/* Page hero (inner pages) */
+.page-hero {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.page-hero h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.page-hero .lead {
+  margin: 1rem auto 0;
+  max-width: 36rem;
+  color: hsl(var(--muted-foreground));
+}
