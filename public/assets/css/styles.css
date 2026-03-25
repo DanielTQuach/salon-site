@@ -90,6 +90,50 @@ main {
   }
 }
 
+/* Top bar */
+.top-bar {
+  background: hsl(var(--deep-plum));
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  color: hsl(var(--primary-foreground) / 0.8);
+}
+
+.top-bar .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.top-bar__left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.top-bar__addr {
+  display: none;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+@media (min-width: 640px) {
+  .top-bar__addr {
+    display: flex;
+  }
+}
+
+.top-bar__item {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.top-bar svg {
+  flex-shrink: 0;
+}
+
 /* Header & nav */
 .site-header {
   position: sticky;
