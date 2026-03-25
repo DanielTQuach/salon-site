@@ -8,22 +8,26 @@
   --foreground: 20 20% 15%;
 
   --card: 30 20% 99%;
+  --card-foreground: 20 20% 15%;
+
   --primary: 350 35% 45%;
   --primary-foreground: 30 25% 97%;
 
   --secondary: 30 20% 92%;
   --secondary-foreground: 20 20% 25%;
 
+  --muted: 30 15% 93%;
   --muted-foreground: 20 10% 50%;
-  --border: 30 15% 88%;
 
-  --deep-plum: 340 25% 20%;
+  --border: 30 15% 88%;
+  --input: 30 15% 88%;
+
   --rose-gold: 350 30% 60%;
-  --warm-cream: 35 30% 95%;
   --champagne: 35 40% 90%;
+  --warm-cream: 35 30% 95%;
+  --deep-plum: 340 25% 20%;
 
   --radius: 0.5rem;
-  --container: 72rem;
 }
 
 *,
@@ -33,16 +37,14 @@
   border-color: hsl(var(--border));
 }
 
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  min-height: 100vh;
-  font-family: Lato, system-ui, sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-family: Lato, sans-serif;
   background: hsl(var(--background));
   color: hsl(var(--foreground));
   -webkit-font-smoothing: antialiased;
@@ -51,19 +53,42 @@ body {
 
 h1,
 h2,
-h3 {
-  font-family: "Playfair Display", Georgia, serif;
-  line-height: 1.2;
-  font-weight: 600;
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
 }
 
 a {
-  color: hsl(var(--primary));
+  color: inherit;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+address {
+  font-style: normal;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 /* Layout */
