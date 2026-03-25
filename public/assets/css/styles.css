@@ -397,3 +397,89 @@ main {
 .btn-outline-light:hover {
   background: hsl(var(--primary-foreground) / 0.1);
 }
+
+/* Services alternating */
+.services-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.service-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .service-row {
+    flex-direction: row;
+  }
+
+  .service-row--reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.service-row__media {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .service-row__media {
+    width: 50%;
+  }
+}
+
+.service-row__media .img-rounded {
+  border-radius: var(--radius);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.service-row__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-row__content {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .service-row__content {
+    width: 50%;
+  }
+}
+
+.service-row h2 {
+  margin: 0 0 1.5rem;
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+.price-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(var(--border));
+  padding-bottom: 0.75rem;
+}
+
+.price-row span:first-child {
+  color: hsl(var(--foreground));
+}
+
+.price-row span:last-child {
+  font-size: 0.875rem;
+  font-style: italic;
+  color: hsl(var(--muted-foreground));
+}
